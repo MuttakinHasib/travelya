@@ -1,7 +1,8 @@
+import { TopSection } from '@containers/TopSection';
 import { NextPage } from 'next';
 
 const HomePage: NextPage = () => {
-  return <div></div>;
+  return <TopSection />;
 };
 
 export default HomePage;

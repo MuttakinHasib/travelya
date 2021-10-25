@@ -39,6 +39,17 @@ export const NavBar = () => {
           </NavItems>
         </Menu>
       )}
+      {!isMobile && (
+        <NavItems>
+          {navItems.map((item, index) => (
+            <NavItem key={index}>
+              <Link href={item.route}>
+                <a>{item.name}</a>
+              </Link>
+            </NavItem>
+          ))}
+        </NavItems>
+      )}
     </Container>
   );
 };
