@@ -12,7 +12,54 @@ export const NavItems = tw.ul`
 `;
 
 export const NavItem = tw.li`
-lg:(mr-8 text-base mb-0)flex items-center justify-center
-min-h-full text-white cursor-pointer font-medium text-lg
-transition-colors transition-duration[300ms] hover:text-gray-300 box-content mb-2 
+  lg:(mr-8 text-base mb-0)flex items-center justify-center
+  min-h-full text-white cursor-pointer font-medium text-lg
+  transition-colors transition-duration[300ms] hover:text-gray-300 box-content mb-2 
 `;
+
+export const menubar = {
+  bmBurgerButton: {
+    position: 'absolute',
+    width: '20px',
+    height: '20px',
+    right: '42px',
+    top: '35px',
+  },
+  bmBurgerBars: {
+    background: '#fff',
+  },
+  bmBurgerBarsHover: {
+    background: '#a90000',
+  },
+  bmCrossButton: {
+    height: '24px',
+    width: '24px',
+  },
+  bmCross: {
+    background: '#bdc3c7',
+  },
+  bmMenuWrap: {
+    position: 'fixed',
+    width: '80%',
+    height: '100%',
+    top: '0px',
+  },
+  bmMenu: {
+    background: '#373a47',
+    padding: '2.5em 1.5em 0',
+    fontSize: '1.15em',
+  },
+  bmMorphShape: {
+    fill: '#373a47',
+  },
+  bmItemList: {
+    color: '#b8b7ad',
+    padding: '0.8em',
+  },
+  bmItem: {
+    display: 'inline-block',
+  },
+  bmOverlay: {
+    background: 'rgba(0, 0, 0, 0.3)',
+  },
+};

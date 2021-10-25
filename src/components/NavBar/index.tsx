@@ -1,12 +1,14 @@
 import { Logo } from '@components/Logo';
+import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
+import { slide as Menu } from 'react-burger-menu';
 import { deviceSize } from 'responsive';
-import { Container } from './styles';
+import { Container, NavItem, NavItems } from './styles';
 
 const navItems = [
   {
     name: 'Home',
-    route: '/Home',
+    route: '/home',
   },
   {
     name: 'Explore',
@@ -24,7 +26,19 @@ export const NavBar = () => {
   return (
     <Container>
       <Logo />
-      {isMobile ? : }
+      {isMobile && (
+        <Menu right>
+          <NavItems>
+            {navItems.map((item, index) => (
+              <NavItem key={index}>
+                <Link href={item.route}>
+                  <a>{item.name}</a>
+                </Link>
+              </NavItem>
+            ))}
+          </NavItems>
+        </Menu>
+      )}
     </Container>
   );
 };
