@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import { slide as Menu } from 'react-burger-menu';
 import { deviceSize } from 'responsive';
-import { Container, NavItem, NavItems } from './styles';
+import { Container, menubar, NavItem, NavItems } from './styles';
 
 const navItems = [
   {
@@ -27,7 +27,7 @@ export const NavBar = () => {
     <Container>
       <Logo />
       {isMobile && (
-        <Menu right>
+        <Menu right styles={menubar}>
           <NavItems>
             {navItems.map((item, index) => (
               <NavItem key={index}>
