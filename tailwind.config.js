@@ -7,7 +7,11 @@ module.exports = {
       center: true,
       padding: '1.5rem',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        archivo: ["Archivo Narrow", 'Aria'],
+      },
+    },
   },
   variants: {
     extend: {},

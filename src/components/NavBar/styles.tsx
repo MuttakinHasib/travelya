@@ -8,11 +8,11 @@ export const Container = styled.div`
 `;
 
 export const NavItems = tw.ul`
-  list-none w-full h-auto lg:(h-full ml-20 w-auto) flex justify-center items-center 
+  sm:space-x-5 list-none w-full h-auto lg:(h-full ml-20 w-auto) flex justify-center items-center 
 `;
 
 export const NavItem = tw.li`
-  lg:(mr-8 text-base mb-0)flex items-center justify-center
+  lg:(text-base mb-0)flex items-center justify-center
   min-h-full text-white cursor-pointer font-medium text-lg
   transition-colors transition-duration[300ms] hover:text-gray-200 box-content mb-2 
 `;
